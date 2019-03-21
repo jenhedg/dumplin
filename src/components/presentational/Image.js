@@ -1,10 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import style from './styles/Image.styles';
 
-const UnstyledImage = ({ className, src, alt }) => (
+const Image = ({ className, src, alt }) => (
   <img className={className} src={src} alt={alt} />
 );
 
-const Image = styled(UnstyledImage)``;
-
-export default Image;
+export default style(Image);
