@@ -6,6 +6,7 @@ import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
 import RandomImagesGrid from './container/RandomImagesGrid';
 import GlobalStyles from './presentational/styles/_Global.styles';
+import WhatWeDo from './pages/WhatWeDo';
 
 const App = () => (
   <Router>
@@ -13,6 +14,10 @@ const App = () => (
       <GlobalStyles />
       <MainNav />
       <MainHero />
+      <Route path="/meet-the-team" render={MeetTheTeam} />
+      <Route path="/what-we-do" render={WhatWeDo} />
+      <Route path="/magnolia-premier-partner" render={MagnoliaPremierPartner} />
+      <Route path="/career" render={Career} />
       <RandomImagesGrid />
     </div>
   </Router>
