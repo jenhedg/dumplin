@@ -1,62 +1,62 @@
 export const IMAGES = [
   {
-    src: 'https://picsum.photos/400?random',
+    src: 'https://picsum.photos/200?random',
     alt: 'beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random1',
+    src: 'https://picsum.photos/200?random1',
     alt: 'Another beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random2',
+    src: 'https://picsum.photos/200?random2',
     alt: 'third beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random3',
+    src: 'https://picsum.photos/200?random3',
     alt: 'fourth image',
   },
   {
-    src: 'https://picsum.photos/400?random4',
+    src: 'https://picsum.photos/200?random4',
     alt: 'really ugly image',
   },
   {
-    src: 'https://picsum.photos/400?random5',
+    src: 'https://picsum.photos/200?random5',
     alt: 'passable image',
   },
   {
-    src: 'https://picsum.photos/400?random6',
+    src: 'https://picsum.photos/200?random6',
     alt: 'beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random7',
+    src: 'https://picsum.photos/200?random7',
     alt: 'Another beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random8',
+    src: 'https://picsum.photos/200?random8',
     alt: 'third beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random9',
+    src: 'https://picsum.photos/200?random9',
     alt: 'fourth image',
   },
   {
-    src: 'https://picsum.photos/400?random10',
+    src: 'https://picsum.photos/200?random10',
     alt: 'really ugly image',
   },
   {
-    src: 'https://picsum.photos/400?random11',
+    src: 'https://picsum.photos/200?random11',
     alt: 'passable image',
   },
   {
-    src: 'https://picsum.photos/400?random12',
+    src: 'https://picsum.photos/200?random12',
     alt: 'beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random13',
+    src: 'https://picsum.photos/200?random13',
     alt: 'Another beautiful image',
   },
   {
-    src: 'https://picsum.photos/400?random14',
+    src: 'https://picsum.photos/200?random14',
     alt: 'third beautiful image',
   },
 ];
