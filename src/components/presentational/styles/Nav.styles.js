@@ -13,6 +13,7 @@ export default Nav => styled(Nav)`
     padding: 0.5em;
     background: ${props => getBackgroundColor(props)};
     justify-content: flex-end;
+    height: 50px;
   }
 
   .list ${NavLink} {

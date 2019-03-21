@@ -4,11 +4,11 @@ import Hero from '../presentational/Hero';
 class Container extends React.Component {
   state = {
     title: 'Crescendo Collective',
+    image: 'https://picsum.photos/2000', // move this to consts?
   };
 
   render() {
-    const { title } = this.state;
-    return <Hero title={title} />;
+    return <Hero title={this.state.title} image={this.state.image} />;
   }
 }
 
