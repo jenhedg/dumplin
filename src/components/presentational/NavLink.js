@@ -1,9 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 
-/// TODO: Add Styles
-
-const NavLink = (props) => (
-    <li className="nav__link"><a href={props.href}>{props.title}</a></li>
+const UnstyledNavLink = (props) => (
+    <li className={props.className}><a href={props.href}>{props.title}</a></li>
 )
+
+const NavLink = styled(UnstyledNavLink)``
 
 export default NavLink;
