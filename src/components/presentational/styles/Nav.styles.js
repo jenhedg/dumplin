@@ -27,6 +27,8 @@ export default Nav => styled(Nav)`
     a:hover,
     a:focus {
       z-index: 1;
+      color: ${props => getBackgroundColor(props)};
+      background-color: ${props => getNavLinkColor(props)};
       text-decoration: underline;
     }
   }
