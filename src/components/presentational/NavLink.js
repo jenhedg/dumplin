@@ -1,12 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import style from './styles/NavLink.styles';
 
-const UnstyledNavLink = ({ className, href, title }) => (
+const NavLink = ({ className, href, title }) => (
   <li className={className}>
     <a href={href}>{title}</a>
   </li>
 );
 
-const NavLink = styled(UnstyledNavLink)``;
-
-export default NavLink;
+export default style(NavLink);
