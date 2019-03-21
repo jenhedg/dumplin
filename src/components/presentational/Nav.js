@@ -31,7 +31,7 @@ const Nav = styled(UnstyledNav)`
       color: ${(props) => {
     const navHeaderBackground = props.backgroundColor || '#C4C4C5';
 
-    return Color(navHeaderBackground).isDark() ? 'white' : 'black';
+    return Color(navHeaderBackground).isDark() ? '#FFF' : '#000';
   }};
       padding: 0.5em;
     }
