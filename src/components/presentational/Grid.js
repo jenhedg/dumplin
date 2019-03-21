@@ -14,7 +14,7 @@ const UnstyledGrid = (props) => (
 const Grid = styled(UnstyledGrid)`
   width: 100%;
   display: grid;
-  grid: repeat(3, 1fr)/ repeat(5, 1fr);
+  grid: repeat(auto-fit,  minmax(200px, 1fr))/ repeat(auto-fit,  minmax(200px, 1fr));
   gap: 10px;
 
   ${Image} {
