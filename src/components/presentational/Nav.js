@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import Color from 'color';
-import NavLink from './NavLink';
 
-const UnstyledNav = ({ className, items }) => (
+import NavLink from './NavLink';
+import style from './styles/Nav.styles';
+
+const Nav = ({ className, items }) => (
   <nav className={className}>
     <ul className="list">
       {items.map(({ href, title }) => {
@@ -13,35 +13,4 @@ const UnstyledNav = ({ className, items }) => (
   </nav>
 );
 
-const Nav = styled(UnstyledNav)`
-  .list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0.5em;
-    background: ${props => props.backgroundColor || '#C4C4C5'};
-    justify-content: flex-end;
-  }
-
-  .list ${NavLink} {
-    a {
-      position: relative;
-      display: inline-block;
-      text-decoration: none;
-      color: ${(props) => {
-    const navHeaderBackground = props.backgroundColor || '#C4C4C5';
-
-    return Color(navHeaderBackground).isDark() ? '#FFF' : '#000';
-  }};
-      padding: 0.5em;
-    }
-
-    a:hover,
-    a:focus {
-      z-index: 1;
-      text-decoration: underline;
-    }
-  }
-`;
-
-export default Nav;
+export default style(Nav);
