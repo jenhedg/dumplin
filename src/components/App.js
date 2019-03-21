@@ -7,6 +7,10 @@ import RandomImagesGrid from './container/RandomImagesGrid';
 const AppStyle = createGlobalStyle`
   @import('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans');
 
+  * {
+    box-sizing: border-box;
+  }
+
   html, 
   body {
     padding: 0;
