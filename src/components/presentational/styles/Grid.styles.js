@@ -4,11 +4,13 @@ import { BEZIER_CURVES } from '../../../consts';
 
 export default Grid => styled(Grid)`
   width: 100%;
+  padding: 10px;
   display: grid;
   grid: repeat(auto-fit, minmax(200px, 1fr)) / repeat(
       auto-fit,
       minmax(200px, 1fr)
     );
+  gap: 5px;
 
   ${Image} {
     width: 100%
