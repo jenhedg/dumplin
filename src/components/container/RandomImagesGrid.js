@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '../presentational/Grid';
-import {images} from '../consts';
+import {images} from '../../consts';
 class RandomImagesGrid extends React.Component {
 
   state = {
