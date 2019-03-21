@@ -1,13 +1,13 @@
 import React from 'react';
+import style from './styles/Hero.styles';
 
-// / TODO: Add Styles
-
-const Hero = ({ title }) => {
+const Hero = ({ className, title, image }) => {
   return (
-    <div className="hero">
+    <div className={className}>
+      <img src={image} />
       <div className="hero__title">{title}</div>
     </div>
   );
 };
 
-export default Hero;
+export default style(Hero);
