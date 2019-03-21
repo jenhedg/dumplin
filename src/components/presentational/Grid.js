@@ -6,7 +6,12 @@ const Grid = ({ className, images }) => (
   <div className={className}>
     {images.map(({ src, alt }) => {
       return (
-        <Image key={`grid-image-${className}-${src}`} src={src} alt={alt} />
+        <Image
+          tabIndex="0"
+          key={`grid-image-${className}-${src}`}
+          src={src}
+          alt={alt}
+        />
       );
     })}
   </div>
