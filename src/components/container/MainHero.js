@@ -1,12 +1,14 @@
 import React from 'react';
 import Hero from '../presentational/Hero';
+
 class Container extends React.Component {
   state = {
-    title: "Crescendo Collective"
-  }
+    title: 'Crescendo Collective',
+  };
 
-  render(){
-    return  (<Hero title={this.state.title}/>)
+  render() {
+    const { title } = this.state;
+    return <Hero title={title} />;
   }
 }
 

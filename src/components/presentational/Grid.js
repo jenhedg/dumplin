@@ -1,12 +1,12 @@
-import React from "react";
-import Image from "./Image";
-import style from "./styles/Grid.styles";
+import React from 'react';
+import Image from './Image';
+import style from './styles/Grid.styles';
 
-const Grid = props => (
-  <div className={props.className}>
-    {props.images.map((image, index) => {
+const Grid = ({ className, images }) => (
+  <div className={className}>
+    {images.map(({ src, alt }) => {
       return (
-        <Image key={`grid-image-${index}`} src={image.src} alt={image.alt} />
+        <Image key={`grid-image-${className}-${src}`} src={src} alt={alt} />
       );
     })}
   </div>

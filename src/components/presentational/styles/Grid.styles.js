@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Image from "../Image";
+import styled from 'styled-components';
+import Image from '../Image';
 
 export default Grid => styled(Grid)`
   width: 100%;

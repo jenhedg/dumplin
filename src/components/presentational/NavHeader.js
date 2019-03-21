@@ -1,12 +1,12 @@
 import React from 'react';
-import Nav from '../presentational/Nav';
+import Nav from './Nav';
 
-/// TODO: Add Styles
+// / TODO: Add Styles
 
-const NavHeader = (props) => (
-    <header>
-        <Nav/>
-    </header>
-)
+const NavHeader = () => (
+  <header>
+    <Nav />
+  </header>
+);
 
 export default NavHeader;

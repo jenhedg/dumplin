@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
-import { createGlobalStyle } from 'styled-components'
 import RandomImagesGrid from './container/RandomImagesGrid';
 
 const AppStyle = createGlobalStyle`
@@ -17,19 +17,15 @@ const AppStyle = createGlobalStyle`
     margin: 0;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
   }
-`
+`;
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <AppStyle/>
-        <MainNav/>
-        <MainHero/>
-        <RandomImagesGrid/>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <AppStyle />
+    <MainNav />
+    <MainHero />
+    <RandomImagesGrid />
+  </div>
+);
 
 export default App;
