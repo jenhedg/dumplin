@@ -1,12 +1,15 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Link, Route, Switch,
+ BrowserRouter as Router, Link, Route, Switch 
 } from 'react-router-dom';
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
 import RandomImagesGrid from './container/RandomImagesGrid';
 import GlobalStyles from './presentational/styles/_Global.styles';
+import MeetTheTeam from './pages/MeetTheTeam';
 import WhatWeDo from './pages/WhatWeDo';
+import MagnoliaPremierPartner from './pages/MagnoliaPremierPartner';
+import Career from './pages/Career';
 
 const App = () => (
   <Router>
