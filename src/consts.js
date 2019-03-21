@@ -60,3 +60,11 @@ export const IMAGES = [
     alt: 'third beautiful image',
   },
 ];
+
+// /////////
+// Styles
+// ///////
+
+export const BEZIER_CURVES = {
+  snappy: 'cubic-bezier(.28,0,.39,1)',
+};
