@@ -1,27 +1,12 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
 import RandomImagesGrid from './container/RandomImagesGrid';
-
-const AppStyle = createGlobalStyle`
-  @import('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans');
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html, 
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-  }
-`;
+import GlobalStyles from './presentational/styles/_Global.styles';
 
 const App = () => (
   <div className="App">
-    <AppStyle />
+    <GlobalStyles />
     <MainNav />
     <MainHero />
     <RandomImagesGrid />
