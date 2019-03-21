@@ -1,7 +1,6 @@
 import React from 'react';
-import {
- BrowserRouter as Router, Link, Route, Switch 
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
 import RandomImagesGrid from './container/RandomImagesGrid';
