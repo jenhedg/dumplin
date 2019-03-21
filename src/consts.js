@@ -53,16 +53,4 @@ export const images = [{
 {
   src: "https://picsum.photos/400?random14",
   alt: "third beautiful image"
-},
-{
-  src: "https://picsum.photos/400?random15",
-  alt: "fourth image"
-},
-{
-  src: "https://picsum.photos/400?random16",
-  alt: "really ugly image"
-},
-{
-  src: "https://picsum.photos/400?random17",
-  alt: "passable image"
 }]
