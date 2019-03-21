@@ -1,17 +1,17 @@
 import React from 'react';
-import NavLink from '../presentational/NavLink';
+import NavLink from './NavLink';
 
 
-/// TODO: Add Styles
+// / TODO: Add Styles
 
-const Nav = (props) => (
-    <nav className="nav">
-        <ul>
-            {props.items.map((item, index) => {
-                return <NavLink href={item.href} title={item.title} key={`nav-link--${index}`}/>
-            })}
-        </ul>
-    </nav>
-)
+const Nav = items => (
+  <nav className="nav">
+    <ul>
+      {items.map(({ href, title }) => {
+        return <NavLink href={href} title={title} key={`nav-link--${href}`} />;
+      })}
+    </ul>
+  </nav>
+);
 
 export default Nav;

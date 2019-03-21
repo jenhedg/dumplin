@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from './Image';
 
-const Grid = (props) => (
+const Grid = ({ images }) => (
   <div className="grid">
-    {props.images.map((image, index) => {
-      return <Image key={`grid-image-${index}`} src={image.src} alt={image.alt}/>
+    {images.map(({ src, alt }) => {
+      return <Image key={`grid-image-${src}`} src={src} alt={alt} />;
     })}
   </div>
-)
+);
 
-export default Grid
+export default Grid;

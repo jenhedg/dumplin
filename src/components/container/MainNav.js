@@ -4,24 +4,24 @@ import Nav from '../presentational/Nav';
 class MainNav extends React.Component {
   state = {
     items: [{
-        href: "/meet-the-team",
-        title: "Meet The Team"
+      href: '/meet-the-team',
+      title: 'Meet The Team',
     }, {
-        href: "/what-we-do",
-        title: "What We Do"
+      href: '/what-we-do',
+      title: 'What We Do',
     },
     {
-        href: "/magnolia-premier-partner",
-        title: "Magnolia Premier Partner"
+      href: '/magnolia-premier-partner',
+      title: 'Magnolia Premier Partner',
     },
     {
-        href: "/career",
-        title: "Career"
-    }]
+      href: '/career',
+      title: 'Career',
+    }],
   }
 
-  render(){
-    return  (<Nav items={this.state.items} />)
+  render() {
+    return (<Nav items={this.state.items} />);
   }
 }
 

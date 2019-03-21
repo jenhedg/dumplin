@@ -7,9 +7,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MainNav/>
-        <MainHero/>
-        <RandomImagesGrid/>
+        <MainNav />
+        <MainHero />
+        <RandomImagesGrid />
       </div>
     );
   }

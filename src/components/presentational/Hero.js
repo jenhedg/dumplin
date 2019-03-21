@@ -1,14 +1,13 @@
 import React from 'react';
 
-/// TODO: Add Styles
+// / TODO: Add Styles
 
-const Hero = (props) => {
+const Hero = ({ title }) => {
   return (
     <div className="hero">
-      <div className="hero__title">{props.title}</div>
+      <div className="hero__title">{title}</div>
     </div>
-  )
-}
+  );
+};
 
 export default Hero;
-

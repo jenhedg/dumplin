@@ -1,24 +1,8 @@
 import React from 'react';
 import Grid from '../presentational/Grid';
-import {images} from '../../consts';
-class RandomImagesGrid extends React.Component {
+import { IMAGES } from '../../consts';
 
-  state = {
-    images: [] // Start with an empty array
-  }
-
-  componentDidMount(){
-    this.setState(state => {
-      return { images: images }
-    })
-  }
-  
-  render(){
-    return (
-      <Grid images={this.state.images}/>
-    )
-  }
-}
+const RandomImagesGrid = () => <Grid images={IMAGES} />;
 
 
-export default RandomImagesGrid
+export default RandomImagesGrid;
