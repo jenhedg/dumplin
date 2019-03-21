@@ -25,7 +25,7 @@ class MainNav extends React.Component {
 
   render() {
     const { items } = this.state;
-    return <Nav backgroundColor="#000" items={items} />;
+    return <Nav backgroundColor="#EC5D2A" items={items} />;
   }
 }
 
