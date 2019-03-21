@@ -6,8 +6,10 @@ import MainNav from './container/MainNav';
 import Fade from './presentational/Fade';
 
 import GlobalStyles from './presentational/styles/_Global.styles';
+
 import MeetTheTeam from './pages/MeetTheTeam';
 import WhatWeDo from './pages/WhatWeDo';
+import Home from './pages/Home';
 import MagnoliaPremierPartner from './pages/MagnoliaPremierPartner';
 import Career from './pages/Career';
 
