@@ -3,7 +3,7 @@ import NavLink from './NavLink';
 
 // / TODO: Add Styles
 
-const Nav = ({items}) => (
+const Nav = ({ items }) => (
   <nav className="nav">
     <ul>
       {Array.isArray(items) ? (
