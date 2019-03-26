@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import style from './styles/NavLink.styles';
 
-const NavLink = ({ className, href, title }) => (
+export default style(({ className, href, title }) => (
   <li className={className}>
-    <Link to={href}>{title}</Link>
+    <NavLink exact activeClassName="is-active" to={href}>
+      {title}
+    </NavLink>
   </li>
-);
-
-export default style(NavLink);
+));

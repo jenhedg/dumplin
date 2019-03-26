@@ -15,22 +15,26 @@ import Career from './pages/Career';
 
 const App = () => (
   <Router>
-    <div className="App">
-      <GlobalStyles />
-      <MainNav />
-      <Fade>
-        <Switch>
-          <Route path="/what-we-do" render={WhatWeDo} />
-          <Route
-            path="/magnolia-premier-partner"
-            render={MagnoliaPremierPartner}
-          />
-          <Route path="/career" render={Career} />
-          <Route path="/meet-the-team" render={MeetTheTeam} />
-          <Route path="/" render={Home} />
-        </Switch>
-      </Fade>
-    </div>
+    <Route
+      render={({ location }) => (
+        <div className="App">
+          <GlobalStyles />
+          <MainNav location />
+          <Fade key={location.key}>
+            <Switch>
+              <Route path="/what-we-do" render={WhatWeDo} />
+              <Route
+                path="/magnolia-premier-partner"
+                render={MagnoliaPremierPartner}
+              />
+              <Route path="/career" render={Career} />
+              <Route path="/meet-the-team" render={MeetTheTeam} />
+              <Route path="/" render={Home} />
+            </Switch>
+          </Fade>
+        </div>
+      )}
+    />
   </Router>
 );
 

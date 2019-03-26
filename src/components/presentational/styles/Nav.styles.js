@@ -1,9 +1,6 @@
 import styled from 'styled-components';
-import Color from 'color';
+import { getBackgroundColor, getNavLinkColor } from './_Global.styles';
 import NavLink from '../NavLink';
-
-const getBackgroundColor = ({ backgroundColor }) => backgroundColor || '#C4C4C5';
-const getNavLinkColor = props => (Color(getBackgroundColor(props)).isDark() ? '#FFF' : '#000');
 
 export default Nav => styled(Nav)`
   .list {
@@ -16,21 +13,12 @@ export default Nav => styled(Nav)`
     height: 50px;
   }
 
-  .list ${NavLink} {
-    a {
-      position: relative;
-      display: inline-block;
-      text-decoration: none;
-      color: ${props => getNavLinkColor(props)};
-      padding: 0.5em;
-    }
+  .list ${NavLink} a {
+    color: ${props => getNavLinkColor(props)};
 
-    a:hover,
-    a:focus {
-      z-index: 1;
+    &.is-active {
       color: ${props => getBackgroundColor(props)};
-      background-color: ${props => getNavLinkColor(props)};
-      text-decoration: underline;
+      background: ${props => getNavLinkColor(props)};
     }
   }
 `;
