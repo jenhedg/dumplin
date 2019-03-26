@@ -5,6 +5,10 @@ class MainNav extends React.Component {
   state = {
     items: [
       {
+        href: '/',
+        title: 'Home',
+      },
+      {
         href: '/meet-the-team',
         title: 'Meet The Team',
       },
