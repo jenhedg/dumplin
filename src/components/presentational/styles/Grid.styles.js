@@ -22,7 +22,6 @@ export default Grid => styled(Grid)`
     width: 100%
     cursor: pointer;
     position: relative;
-    filter: grayscale(.9);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,.3);
     transition: 
       filter 150ms ${BEZIER_CURVES.snappy},
