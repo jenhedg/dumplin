@@ -10,22 +10,30 @@ export default Grid => styled(Grid)`
       auto-fit,
       minmax(200px, 1fr)
     );
-  gap: 5px;
+  gap: 15px;
+
+  &:hover {
+    ${Image} {
+      filter: grayscale(.9) blur(1px);
+    }
+  }
 
   ${Image} {
     width: 100%
+    cursor: pointer;
     position: relative;
-    transform: scale(.95);
+    filter: grayscale(.9);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,.3);
-    transition: transform 150ms ${BEZIER_CURVES.snappy}, box-shadow 150ms ${
-  BEZIER_CURVES.snappy
-};
+    transition: 
+      filter 150ms ${BEZIER_CURVES.snappy},
+      box-shadow 150ms ${BEZIER_CURVES.snappy};
   }
 
   ${Image}:hover,
   ${Image}:focus {
     transform: scale(1);
     z-index: 1;
+    filter: grayscale(0);
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,.5);
   }
 `;
