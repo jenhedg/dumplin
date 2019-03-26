@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
-import RandomImagesGrid from './container/RandomImagesGrid';
+import EmployeeImagesGrid from './container/EmployeeImagesGrid';
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <MainNav />
         <MainHero />
-        <RandomImagesGrid />
+        <EmployeeImagesGrid />
       </div>
     );
   }
