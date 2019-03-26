@@ -1,11 +1,14 @@
 import React from 'react';
+import style from './styles/Hero.styles';
 
-/// TODO: Add Styles
+const Hero = ({ className, title, image }) => {
+  return (
+    <div className={className}>
+      <div className="hero__title">
+        <h1>{title}</h1>
+      </div>
+    </div>
+  );
+};
 
-const Hero = (props) => (
-  <div className="hero">
-    <div className="hero__title">{props.title}</div>
-  </div>
-)
-
-export default Hero;
+export default style(Hero);
