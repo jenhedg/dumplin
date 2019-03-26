@@ -109,6 +109,9 @@ export const EMPLOYEE_IMAGES = [
 // /////////
 // Styles
 // ///////
+
+export const MAIN_NAV_BACKGROUND_COLOR = '#EC5D2A';
+
 export const BEZIER_CURVES = {
   snappy: 'cubic-bezier(.28,0,.39,1)',
 };
