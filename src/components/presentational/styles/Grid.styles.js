@@ -30,9 +30,8 @@ export default Grid => styled(Grid)`
 
   ${Image}:hover,
   ${Image}:focus {
-    transform: scale(1);
     z-index: 1;
-    filter: grayscale(0);
+    filter: grayscale(0) blur(0);
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,.5);
   }
 `;
