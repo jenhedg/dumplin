@@ -1,14 +1,15 @@
 import React from 'react';
 import Hero from '../presentational/Hero';
+import HeroBackground from '../../img/HeroBackground.jpeg';
 
 class Container extends React.Component {
   state = {
     title: 'Crescendo Collective',
-    image: 'https://picsum.photos/2000', // move this to consts?
   };
 
   render() {
-    return <Hero title={this.state.title} image={this.state.image} />;
+    const { title } = this.state;
+    return <Hero title={title} image={HeroBackground} />;
   }
 }
 
