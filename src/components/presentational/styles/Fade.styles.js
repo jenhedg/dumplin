@@ -1,10 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
 
-const fadeInKeyframes = keyframes`${fadeIn}`;
-
-const Fade = styled.div`
-  animation: 150ms ${fadeInKeyframes};
+export const Fade = styled.div`
+  animation: 250ms ${keyframes`${fadeIn}`};
 `;
 
-export default () => Fade;
+export default Fade;

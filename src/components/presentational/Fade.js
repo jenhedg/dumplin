@@ -1,3 +1,3 @@
 import style from './styles/Fade.styles';
 
-export default style();
+export default style;
