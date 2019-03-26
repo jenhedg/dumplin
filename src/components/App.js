@@ -22,14 +22,14 @@ const App = () => (
           <MainNav location />
           <Fade key={location.key}>
             <Switch>
-              <Route path="/what-we-do" render={WhatWeDo} />
+              <Route path="/what-we-do" render={() => <WhatWeDo />} />
               <Route
                 path="/magnolia-premier-partner"
-                render={MagnoliaPremierPartner}
+                render={() => <MagnoliaPremierPartner />}
               />
-              <Route path="/career" render={Career} />
-              <Route path="/meet-the-team" render={MeetTheTeam} />
-              <Route path="/" render={Home} />
+              <Route path="/career" render={() => <Career />} />
+              <Route path="/meet-the-team" render={() => <MeetTheTeam />} />
+              <Route path="/" render={() => <Home />} />
             </Switch>
           </Fade>
         </div>
