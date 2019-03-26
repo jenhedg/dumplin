@@ -1,8 +1,8 @@
 import React from 'react';
 import Grid from '../presentational/Grid';
-import { IMAGES } from '../../consts';
+import { EMPLOYEE_IMAGES } from '../../consts';
 
-const RandomImagesGrid = () => <Grid images={IMAGES} />;
+const RandomImagesGrid = () => <Grid images={EMPLOYEE_IMAGES} />;
 
 
 export default RandomImagesGrid;
