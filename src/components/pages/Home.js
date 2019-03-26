@@ -1,6 +1,6 @@
 import React from 'react';
 import MainHero from '../container/MainHero';
-import Page from './__Page';
+import Page from './Page';
 
 const Home = () => (
   <Page>
