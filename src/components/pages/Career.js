@@ -1,5 +1,6 @@
 import React from 'react';
+import Page from './__Page';
 
-const Career = () => <p>Careers and sich</p>;
+const Career = () => <Page>Careers and such</Page>;
 
 export default Career;

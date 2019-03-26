@@ -1,7 +1,11 @@
 import React from 'react';
+import Page from './__Page';
 
 const MagnoliaPremierPartner = () => (
-  <p>CRESCENDO COLLECTIVE: YOUR MAGNOLIA EXPERTS Proud to be a premier partner since Version 1</p>
+  <Page>
+    CRESCENDO COLLECTIVE: YOUR MAGNOLIA EXPERTS Proud to be a premier partner
+    since Version 1
+  </Page>
 );
 
 export default MagnoliaPremierPartner;

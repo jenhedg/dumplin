@@ -1,6 +1,11 @@
 import React from 'react';
 import MainHero from '../container/MainHero';
+import Page from './__Page';
 
-const Home = () => <MainHero />;
+const Home = () => (
+  <Page>
+    <MainHero />
+  </Page>
+);
 
 export default Home;
