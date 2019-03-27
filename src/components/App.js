@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MainNav from './container/MainNav';
 import MainHero from './container/MainHero';
 import MainLogo from './container/MainLogo';
-import RandomImagesGrid from './container/RandomImagesGrid';
+import EmployeeImagesGrid from './container/EmployeeImagesGrid';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
         <MainLogo />
         <MainNav />
         <MainHero />
-        <RandomImagesGrid />
+        <EmployeeImagesGrid />
       </div>
     );
   }
