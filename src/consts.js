@@ -1,3 +1,8 @@
+export const LOGOIMAGE = {
+  src: 'https://crescendocollective.com/img/nav/cc_logo.png',
+  alt: 'company logo',
+};
+
 export const IMAGES = [{
   src: 'https://picsum.photos/400?random',
   alt: 'beautiful image',
