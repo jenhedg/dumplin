@@ -5,15 +5,17 @@ export default Hero => styled(Hero)`
   height: calc(100vh - 50px);
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url(${props => props.image});
+  background-size: cover;
 
   .hero__title {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
     color: white;
     font-size: 32px;
     z-index: 1;
+    text-align: left;
+    margin-left: 20px;
   }
 
   &:after {

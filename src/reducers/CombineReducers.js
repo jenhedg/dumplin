@@ -1,4 +1,7 @@
 import { combineReducers } from 'redux';
-//import { *LIST REDUCERS HERE* } from './Reducers';
+import { filterTerm } from './Reducers';
+// import { *LIST REDUCERS HERE* } from './Reducers';
 
-export const reducers = combineReducers({});
+export const reducers = combineReducers({
+  filterTerm,
+});
