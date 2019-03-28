@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FilterBox = (p) => {
+const FilterBox = ({ handleChange }) => {
   return (
     <div className="field">
       <label className="label">Filter employees</label>
       <div className="control">
-        <input onChange={p.handleChange} className="input" type="text" placeholder="Search for someone!" />
+        <input onChange={handleChange} className="input" type="text" placeholder="Search for someone!" />
       </div>
     </div>
   );

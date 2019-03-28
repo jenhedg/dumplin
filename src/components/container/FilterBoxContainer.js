@@ -10,11 +10,7 @@ class FilterBoxContainer extends Component {
   };
 
   render() {
-    const props = {
-      handleChange: this.handleChange,
-    };
-
-    return <FilterBox {...props} />;
+    return <FilterBox handleChange={this.handleChange} />;
   }
 }
 
