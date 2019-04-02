@@ -6,9 +6,9 @@ export default Grid => styled(Grid)`
   width: 100%;
   padding: 10px;
   display: grid;
-  grid: repeat(auto-fit, minmax(200px, 1fr)) / repeat(
+  grid: repeat(auto-fit, minmax(200px, 250px)) / repeat(
       auto-fit,
-      minmax(200px, 1fr)
+      minmax(200px, 250px)
     );
   gap: 15px;
 
