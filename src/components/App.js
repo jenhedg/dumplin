@@ -18,18 +18,30 @@ const App = () => (
     <Route
       render={({ location }) => (
         <div className="App">
+          {/* Adds Global Styles to every page */}
           <GlobalStyles />
+
+          {/* Visible on Every Page */}
           <MainNav location />
+
           <Fade key={location.key}>
+            {/* Switch looks inherits the location, and chooses one Route to show. */}
             <Switch>
-              <Route path="/what-we-do" render={() => <WhatWeDo />} />
-              <Route
-                path="/magnolia-premier-partner"
-                render={() => <MagnoliaPremierPartner />}
-              />
-              <Route path="/career" render={() => <Career />} />
-              <Route path="/meet-the-team" render={() => <MeetTheTeam />} />
-              <Route path="/" render={() => <Home />} />
+              <Route path="/what-we-do">
+                <WhatWeDo />
+              </Route>
+              <Route path="/magnolia-premier-partner">
+                <MagnoliaPremierPartner />
+              </Route>
+              <Route path="/career">
+                <Career />
+              </Route>
+              <Route path="/meet-the-team">
+                <MeetTheTeam />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
             </Switch>
           </Fade>
         </div>
