@@ -1,5 +1,8 @@
 import React from 'react';
+import style from './styles/Page.styles';
 
-export default ({ children, className }) => (
+export const UnstyledPage = ({ children, className }) => (
   <div className={className}>{children}</div>
 );
+
+export default style(UnstyledPage);

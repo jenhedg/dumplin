@@ -1,11 +1,12 @@
 import React from 'react';
 import MainHero from '../container/MainHero';
 import Page from './Page';
+import style from './styles/Home.styles';
 
-const Home = () => (
-  <Page>
+export const UnstyledHome = ({ className }) => (
+  <Page className={className}>
     <MainHero />
   </Page>
 );
 
-export default Home;
+export default style(UnstyledHome);

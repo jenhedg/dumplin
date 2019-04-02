@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../presentational/Nav';
+import { MAIN_NAV_BACKGROUND_COLOR } from '../../consts';
 
 class MainNav extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class MainNav extends React.Component {
 
   render() {
     const { items } = this.state;
-    return <Nav backgroundColor="#EC5D2A" items={items} />;
+    return <Nav backgroundColor={MAIN_NAV_BACKGROUND_COLOR} items={items} />;
   }
 }
 
