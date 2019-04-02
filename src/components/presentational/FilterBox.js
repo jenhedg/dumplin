@@ -1,14 +1,19 @@
 import React from 'react';
+import style from './styles/FilterBox.styles';
 
-const FilterBox = ({ handleChange }) => {
+const FilterBox = ({ handleChange, className }) => {
   return (
-    <div className="field">
-      <label className="label">Filter employees</label>
-      <div className="control">
-        <input onChange={handleChange} className="input" type="text" placeholder="Search for someone!" />
-      </div>
+    <div className={className}>
+      <label>
+        Filter employees
+        <input
+          onChange={handleChange}
+          type="text"
+          placeholder="Search for someone!"
+        />
+      </label>
     </div>
   );
 };
 
-export default FilterBox;
+export default style(FilterBox);
